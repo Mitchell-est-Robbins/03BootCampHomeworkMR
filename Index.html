@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Keyboard Events</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="../03BootCampHomeworkMR/Assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+      <section></div>
+        <!-- where I add my checkboxes because prompts are dumb -->
+        <div class="checkboxes">
+          <label for="length">Password Length (8-128)</label>
+          <input type= "number" id="length"
+          value="10" min="8" max="128">
+        </div>
+        <div class="checkboxes">
+          <label for="upperCase">Include Uppercase</label>
+          <input type= "checkbox"  id="upperCase">
+        </div>
+        <div class="checkboxes">
+          <label for="lowerCase">Include Lowercase</label>
+          <input type= "checkbox" checked id="lowerCase">
+        </div>
+        <div class="checkboxes">
+          <label for="specialCharacters">Include Special Characters</label>
+          <input type= "checkbox" id="specialCharacters">
+        </div>
+        <div class="checkboxes">
+          <label for="numBers">Include Numbers</label>
+          <input type= "checkbox" id="numBers">
+        </div>
+      </section>
 
-<body>
-  <div class="container">
-    <div id="key-events">
-      <div id= "title">
-        <h2>keydown ⬇️ and keyup ⬆️ </h2>
-        Key Pressed : <span id="key"></span>
-      </div>
-      <div>
-        Key Code : <span id="code"></span>
-      </div>
-      <div>
-      Event status : <span id="status"></span>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
       </div>
     </div>
-  </div>
-
-  <script src="./assets/js/script.js"></script>
-</body>
+    <script src="../03BootCampHomeworkMR/Assets/script.js"></script>
+  </body>
 </html>
