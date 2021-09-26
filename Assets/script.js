@@ -3,7 +3,7 @@
 //set password length and complexity
 // ====================================
 // stupid arrays why dont you want to play nice?? this could have been so beautifully easy 
-//====================================+
+//=====================================
 //empty string that the arrays will add to
 var empty = "";
 //array - lowercase letters
