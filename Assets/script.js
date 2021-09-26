@@ -1,7 +1,9 @@
 
 
-
-    //set password length and complexity
+//set password length and complexity
+// ====================================
+// stupid arrays why dont you want to play nice?? this could have been so beautifully easy 
+//====================================+
 //empty string that the arrays will add to
 var empty = "";
 //array - lowercase letters
@@ -21,16 +23,18 @@ var numBers = "0123456789"
 // =============================================
 //getting the checkboxes info because prompts at the start can go to hell
 // =============================================
-const passlengthC = document.getElementById("length"); 
-const lowerCaseC = document.getElementById("lowerCase");
-const upperCaseC = document.getElementById("upperCase");
-const specialCharactersC = document.getElementById("specialCharacters");
-const numBersC = document.getElementById("numBers");
+var passlengthC = document.getElementById("length"); 
+var lowerCaseC = document.getElementById("lowerCase");
+var upperCaseC = document.getElementById("upperCase");
+var specialCharactersC = document.getElementById("specialCharacters");
+var numBersC = document.getElementById("numBers");
 var password = document.getElementById("password");
-const generateBtn = document.getElementById("generate");
+var generateBtn = document.getElementById("generate");
 
 
-generateBtn.addEventListener("click",function(e){
+//https://stackoverflow.com/questions/47605/string-concatenation-concat-vs-operator
+// desperate last minute code inspired by the above stack overflow post
+generateBtn.addEventListener("click",function(){
     var comboPassword = empty;
     (lowerCaseC.checked)? empty += lowerCase : "";
     (upperCaseC.checked)? empty += upperCase : "";
@@ -44,8 +48,8 @@ password.value = GeneratePass(passlengthC.value, comboPassword)
 
 // generate random password
 function GeneratePass (l , comboPassword){
-    let pwd = "";
-    for (let i=0; i< l; i++) {
+    var pwd = "";
+    for (var i=0; i< l; i++) {
         pwd += comboPassword.charAt(Math.floor(Math.random() * comboPassword.length));
     
     }
@@ -68,20 +72,3 @@ function GeneratePass (l , comboPassword){
 // for (var i=0; i<= complexity; i++){
 //     password= password + values.charAt(Math.floor(Math.random() * Math.floor(values.length-1)));
 // }
-
-
-// document.getElementById("display").value =passoword;
-// generateBtn.addEventListener("click", () => {
-//     let comboPassword = ""
-         
-//      (upperCaseC.checked) ? comboPassword += upperCase : "";
-//      (lowerCaseC.checked) ? comboPassword += lowerCase : "";
-//      (specialCharactersC.checked) ? comboPassword += specialCharacters : "";
-//      (numBersC.checked) ? comboPassword += numBers : "";
- 
-//      password = generatePassword(length.value , comboPassword)
-     
-//      console.log(comboPassword)
- 
-//  });
-
