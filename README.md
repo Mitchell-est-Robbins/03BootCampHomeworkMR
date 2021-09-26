@@ -1,6 +1,15 @@
 ## 03BootCamphomeworkMR
 # Mitchell Robbins
-# Creating a Portfolio Website
+# Password Generator
+
+You might have to hit the password generate button a few times so it knows you are serious. Other than that, I added buttons because they are the best. 
+
+Options for buttons are 
+lowercase (default but not required)
+uppercase
+special characters
+numbers
+8-128 character count (default 10)
 
 
 
