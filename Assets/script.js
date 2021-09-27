@@ -33,7 +33,7 @@ var generateBtn = document.getElementById("generate");
 
 
 //https://stackoverflow.com/questions/47605/string-concatenation-concat-vs-operator
-// desperate last minute code inspired by the above stack overflow post
+// desperate last minute code inspired by the above stack overflow post += is so much better than concat.
 generateBtn.addEventListener("click",function(){
     var comboPassword = empty;
     (lowerCaseC.checked)? empty += lowerCase : "";

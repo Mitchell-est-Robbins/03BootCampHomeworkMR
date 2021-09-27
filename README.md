@@ -4,13 +4,17 @@
 
 You might have to hit the password generate button a few times so it knows you are serious. Other than that, I added buttons because they are the best. 
 
-Options for buttons are 
+## Options for buttons are:
 lowercase (default but not required)
 uppercase
 special characters
 numbers
 8-128 character count (default 10)
 
+
+[My deployed link](https://vookmirvookmir.github.io/03BootCampHomeworkMR/)
+
+![a screenshot of my layout](assets\screencapture.png)
 
 
 
